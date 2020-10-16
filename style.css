@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'formularlight';
+    src: url('formular_light-webfont.woff2') format('woff2'),
+         url('formular_light-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'formularregular';
+    src: url('formular_regular-webfont.woff2') format('woff2'),
+         url('formular_regular-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+     font-family: 'formularlight';
+}
+
+.hero {
+     background-color: #F1F1F1;
+     display: flex;
+     flex-direction: column;
+     max-width: 100%;
+     height: 100vh;
+     justify-content: space-between;
+}
+
+header {
+     display: flex;
+     align-items: flex-start;
+     padding: 40px;
+     padding-top: 0px;
+}
+
+.logo {
+     flex-grow: 1;
+     max-width: 345px;
+     padding-right: 40px;
+}
+.headline {
+     flex-grow: 2;
+     max-width: 670px;
+}
+
+.title {
+     font-size: 50px;
+}
+
+.subtitle {
+     font-family: 'formularregular';
+     font-size: 20px;
+}
+
+.canvas {
+     margin-top: -50px;
+     height: 50%;
+     animation: hideshow 10s ease;
+}
+
+.f-1 {
+     position: absolute;
+     right: 100%;
+     animation: move 5s ease;
+     padding-right: 250px;
+}
+
+.f-2 {
+     animation: move 5s ease;
+}
+
+
+.cta {
+     max-width: 170px;
+     border-radius: 100px;
+     border: 1px solid black;
+     margin: 40px;
+     position: relative;
+     left: 27%;
+}
+
+.cta-p {
+     font-size: 16px;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0; }
+  5% { opacity: 0; }
+  30% { opacity: 1; }
+  100% { opacity: 1; }
+} 
+
+@keyframes move {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(400px); }
+} 
